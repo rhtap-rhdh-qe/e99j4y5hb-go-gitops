@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: e99j4y5hb-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: e99j4y5hb-go 
+  name: e99j4y5hb-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: e99j4y5hb-go 
